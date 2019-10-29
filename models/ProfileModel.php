@@ -9,7 +9,10 @@ class ProfileModel extends Model
     {
         parent::__construct();
         $this->text = "";
-		$this->title = $_SESSION['username'] . "'s Profile";
+		if(isset($_SESSION['username']))
+		{
+			$this->title = $_SESSION['username'] . "'s Profile";
+		}
     }     
 	
 	public function setlistitems($ListItems)
