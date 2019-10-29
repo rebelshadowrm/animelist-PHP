@@ -11,5 +11,6 @@ $frontController = new FrontController(new Router, $routeDestination, $action, $
 include 'templates/header.php';
 include_once 'templates/navarea.php';
 include 'templates/main.php';
-// include 'templates/footer.php';
+
+// anything you want
 ?>
